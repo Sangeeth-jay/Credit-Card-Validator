@@ -1,10 +1,10 @@
-import React from 'react'
-import CreditCard from './components/CreditCard'
+// import CreditCard from './components/CreditCard'
+import CreditCardForm from "./components/CreditCardForm"
 
 const App = () => {
   return (
     <>
-      <CreditCard/>
+      <CreditCardForm/>
     </>
   )
 }
