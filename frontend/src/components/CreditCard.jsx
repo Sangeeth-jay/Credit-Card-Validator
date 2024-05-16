@@ -1,10 +1,14 @@
-const CreditCard = () => {
+/* eslint-disable react/prop-types */
+const CreditCard = (props) => {
+
+const {name, number, expiry, cvv} = props
+
   return (
     <>
         <div className="flex flex-col justify-around bg-gradient-to-tl from-gray-700 via-20% to-gray-800 to-90% p-4 border border-white border-opacity-30 rounded-lg shadow-md w-80 h-52">
           <div className="flex flex-row items-center justify-between mb-3">
             <label className="text-sm text-slate-300 font-semibold pl-2 mb-3 flex-grow">
-              Full Name
+              {name}
             </label>
             <div className="pr-2">
               <div className="flex items-center justify-center relative w-14 h-9 bg-gray-800 border border-white border-opacity-20 rounded-md">
@@ -33,14 +37,14 @@ const CreditCard = () => {
           </div>
           <div className="flex flex-col space-y-3">
             <label className="text-xl text-slate-300 font-semibol pl-2">
-              0000 0000 0000 0000
+              {number}
             </label>
             <div className="flex flex-row justify-between">
               <label className=" text-sm text-slate-300 font-semibold pl-2">
-                MM/AA
+                {expiry}
               </label>
               <label className=" text-sm text-slate-300 font-semibold pr-2">
-                CVV
+                {cvv}
               </label>
             </div>
           </div>
