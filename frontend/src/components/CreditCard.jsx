@@ -116,7 +116,6 @@ const CreditCard = (props) => {
     } else if (catchFirst2Digit() === "6") {
       return ccLogo[3].img;
     }
-
   }
 
   return (
